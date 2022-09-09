@@ -1,0 +1,128 @@
+/* ========== start media query ==========*/
+@use "../helper/variables" as *;
+/* large screen*/
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*section*/
+    .section {
+        &__container {
+            flex-direction: column;
+            row-gap: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            &-content {
+                a::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .section_1 {
+        picture {
+            order: -1;
+        }
+    }
+    .pictures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 769px) {
+    /*nav*/
+    .nav {
+        &__container {
+            .toggle-menu {
+                display: none;
+            }
+            &-links {
+                background: transparent;
+                position: static;
+                row-gap: 0;
+                flex-direction: row;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+                column-gap: 2rem;
+                width: fit-content;
+                margin: unset;
+                border-radius: unset;
+                opacity: 1;
+                box-shadow: unset;
+
+                li a {
+                    width: fit-content;
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                    color: $white;
+                    font-weight: 300;
+                    transition: $transition;
+                    -webkit-transition: $transition;
+                    -moz-transition: $transition;
+                    -ms-transition: $transition;
+                    -o-transition: $transition;
+                    position: relative;
+                    font-size: 16px;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                }
+                li:last-of-type a {
+                    color: #000;
+                    background-color: $white;
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    /*header*/
+    .header {
+        background: url("../images/desktop/image-header.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .section {
+        .graphic_photgraphy {
+            display: flex;
+
+            .graphic,
+            .photography {
+                flex: 1;
+                text-align: center;
+            }
+            .graphic {
+                background: url("../images/desktop/image-graphic-design.jpg");
+                background-position: center top;
+            }
+            .photography {
+                background: url("../images/desktop/image-photography.jpg");
+                background-position: center top;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .header {
+        height: 100vh;
+    }
+}
+
+/* ========== end media query ==========*/

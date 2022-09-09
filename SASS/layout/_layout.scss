@@ -1,0 +1,32 @@
+/* ========== start layout ==========*/
+@use "../helper/variables" as *;
+.container {
+    max-width: 980px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+p {
+    color: $dark-grayish-blue;
+    line-height: 1.5;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.p-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+    .p-5 {
+        padding-top: unset;
+    }
+}
+/* ========== end layout ==========*/

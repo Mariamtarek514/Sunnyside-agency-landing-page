@@ -1,0 +1,46 @@
+/* ========== button settings ==========*/
+@use "../helper/variables" as *;
+.btn {
+    position: relative;
+    z-index: 3;
+    color: #000;
+    font-family: $bold-font;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    &::after {
+        content: "";
+        z-index: -1;
+        width: 105px;
+        height: 7px;
+        position: absolute;
+        left: -5px;
+        bottom: 0;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        transition: background-color $transition;
+        -webkit-transition: background-color $transition;
+        -moz-transition: background-color $transition;
+        -ms-transition: background-color $transition;
+        -o-transition: background-color $transition;
+    }
+    &-red {
+        &::after {
+            background-color: #fe756369;
+        }
+        &:hover::after {
+            background-color: #fc7766;
+        }
+    }
+    &-yellow {
+        &::after {
+            background-color: #ffd30078;
+        }
+        &:hover::after {
+            background-color: $yellow;
+        }
+    }
+}

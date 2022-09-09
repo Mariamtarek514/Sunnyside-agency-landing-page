@@ -1,0 +1,35 @@
+/* ========== start header section ==========*/
+@use "../helper/variables" as *;
+
+.header {
+    position: relative;
+    height: 83vh;
+    background: url("../images/mobile/image-header.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: 25px;
+        right: 25px;
+        text-align: center;
+
+        h1 {
+            color: $white;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            margin-bottom: 40px;
+        }
+        &-arrow {
+            display: inline-block;
+        }
+    }
+}
+/* ========== end header section ==========*/

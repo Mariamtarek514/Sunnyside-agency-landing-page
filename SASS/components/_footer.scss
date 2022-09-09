@@ -1,0 +1,45 @@
+/*start footer section*/
+@use "../helper/variables" as *;
+.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(114, 212, 197);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__links {
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__social {
+        column-gap: 1rem;
+    }
+    a {
+        color: #2c7566;
+        transition: color $transition;
+        -webkit-transition: color $transition;
+        -moz-transition: color $transition;
+        -ms-transition: color $transition;
+        -o-transition: color $transition;
+        &:hover {
+            color: $white;
+        }
+    }
+    svg {
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -ms-transition: $transition;
+        -o-transition: $transition;
+        &:hover path {
+            fill: #fff !important;
+        }
+    }
+}
+/*end footer section*/

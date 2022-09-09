@@ -1,0 +1,45 @@
+/* ========== start testimonials section ==========*/
+@use "../helper/variables" as *;
+.testimonials {
+    h3 {
+        text-align: center;
+        margin-bottom: 4rem;
+        color: $grayish-blue;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    &__container {
+        gap: 30px;
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            row-gap: 2rem;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            p {
+                font-size: 16px;
+            }
+            &__description {
+                h4 {
+                    color: $very-dark-desaturated-blue;
+                }
+                p {
+                    color: $grayish-blue;
+                    font-size: 14px;
+                    margin-top: 0.5rem;
+                    word-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+/* ========== end testimonials section ==========*/

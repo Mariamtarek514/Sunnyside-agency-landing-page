@@ -1,0 +1,14 @@
+/* ========== start pictures section ==========*/
+@use "../helper/variables" as *;
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    img,
+    source {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* ========== end pictures section ==========*/

@@ -1,0 +1,38 @@
+/* ========== start global settings==========*/
+@use "../helper/variables" as *;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn-mobile {
+    font: {
+        family: $bold-font;
+        weight: 900;
+    }
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+// img {
+//     width: 100%;
+//     max-width: 100%;
+// }
+
+/* ========== end global settings==========*/
