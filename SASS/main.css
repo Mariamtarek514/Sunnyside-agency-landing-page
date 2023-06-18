@@ -504,10 +504,14 @@ button {
   .section .graphic_photgraphy .graphic {
     background: url("../images/desktop/image-graphic-design.jpg");
     background-position: center top;
+        background-repeat: no-repeat;
+    background-size: cover;
   }
   .section .graphic_photgraphy .photography {
     background: url("../images/desktop/image-photography.jpg");
     background-position: center top;
+        background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 550px) {
